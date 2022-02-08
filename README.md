@@ -1,7 +1,7 @@
 # Thesis
 
 Major Studio II thesis project. 
-## Research Question
+## (Working) Research Question
 
 How did the COVID-19 pandemic effect sustainable fashion trends? How does this impact the environment? 
 
