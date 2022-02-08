@@ -12,6 +12,6 @@ How did the COVID-19 pandemic effect sustainable fashion trends? How does this i
 
 [3] Haap, Jasmin, Edith Classen, Jan Beringer, Stefan Mecheels, and Jochen S. Gutmann. “Microplastic Fibers Released by Textile Laundry: A New Analytical Approach for the Determination of Fibers in Effluents.” Water 11, no. 10 (October 7, 2019): 2088.
 
-[4]Lee, Ellen. “Framing Sustainable Fashion Concepts on Social Media. An Analysis of #slowfashionaustralia Instagram Posts and Post-COVID Visions of the Future.” Sustainability 13, no. 17 (September 6, 2021): 9976.
+[4] Lee, Ellen. “Framing Sustainable Fashion Concepts on Social Media. An Analysis of #slowfashionaustralia Instagram Posts and Post-COVID Visions of the Future.” Sustainability 13, no. 17 (September 6, 2021): 9976.
 
 [5] “Putting the Brakes on Fast Fashion,” November 12, 2018. https://www.unep.org/news-and-stories/story/putting-brakes-fast-fashion.
