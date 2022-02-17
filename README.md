@@ -58,3 +58,9 @@ What are the benefits and limitations of clothing made in America? Shop local, e
 [6] Lee, Ellen. “Framing Sustainable Fashion Concepts on Social Media. An Analysis of #slowfashionaustralia Instagram Posts and Post-COVID Visions of the Future.” Sustainability 13, no. 17 (September 6, 2021): 9976.
 
 [7] “Putting the Brakes on Fast Fashion,” November 12, 2018. https://www.unep.org/news-and-stories/story/putting-brakes-fast-fashion.
+
+# Images
+![image](https://user-images.githubusercontent.com/48970337/154546043-e67cf4ca-4c7d-40d4-96e7-da2d501bb758.png)
+
+![image](https://user-images.githubusercontent.com/48970337/154546234-323fa4db-acc7-42a8-86a2-2f22af79a7d0.png)
+
