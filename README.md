@@ -44,6 +44,16 @@ What are the benefits and limitations of clothing made in America? Shop local, e
 * Predicted outcomes
 * Analyze credibility
 
+## Form
+
+### Preliminary low-fidelity skecth
+
+![image](https://user-images.githubusercontent.com/48970337/155570748-bdd21036-f1fa-4ed0-b123-f206d9e59e82.png)
+
+### Colors
+
+<img width="372" alt="image" src="https://user-images.githubusercontent.com/48970337/155570985-9c051f17-28ef-4766-b3f1-9df41443198b.png">
+
 # References
 [1] Bedat, Maxine. Unraveled: The Life and Death of a Garment. New York: Penguin Publishing Group, 2021. https://ebookcentral-proquest-com.libproxy.newschool.edu/lib/newschool/detail.action?pq-origsite=primo&docID=6614384.
 
