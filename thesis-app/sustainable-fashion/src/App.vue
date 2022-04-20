@@ -1,6 +1,6 @@
 <template>
   <HelloWorld/>
-  <CountriesStep :data="data" :height="400" :width="width" />
+  <!-- <CountriesStep :data="data" :height="400" :width="width" /> -->
 </template>
 
 <script>
