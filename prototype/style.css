@@ -1,0 +1,96 @@
+/* Body */
+body{
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    margin-top: 60px;
+    background-color: #FFF6E9;
+}
+h1{
+    text-align: center;
+    font-size: 80px;
+    color: #DC6D49;
+  }
+/* title */
+.subtitle{
+    font-style: italic;
+}
+h2 {
+    color: #2C1209;
+}
+  
+input {
+    margin: 0 7px;
+}
+/* water */
+/* *, *:before, *:after {
+    box-sizing: border-box;
+    outline: none;
+} */
+
+.box {
+    height: 380px;
+    width: 380px;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    margin-left: 50%;
+    margin-top: 250px;
+    transform: translate(-50%, -50%);
+    background: #020438;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.box .percent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 64px;
+}
+.box .water {
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 100%);
+    background: #4d6de3;
+    transition: all 0.3s;
+}
+.box .water_wave {
+    width: 200%;
+    position: absolute;
+    bottom: 100%;
+}
+.box .water_wave_back {
+    right: 0;
+    fill: #c7eeff;
+    animation: wave-back 1.4s infinite linear;
+}
+.box .water_wave_front {
+    left: 0;
+    fill: #4d6de3;
+    margin-bottom: -1px;
+    animation: wave-front 0.7s infinite linear;
+}
+@keyframes wave-front {
+    100% {
+        transform: translate(-50%, 0);
+   }
+}
+@keyframes wave-back {
+    100% {
+        transform: translate(50%, 0);
+   }
+}
+
