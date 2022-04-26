@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanging by a Thread</title>
+    <link rel="stylesheet" href="https://use.typekit.net/glg6vnu.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+</head>
+<body>
+    <main>
+        <!-- TITLE -->
+        <div class="title">
+            <img src="./assets/title.svg">
+        </div> 
+        <!-- <h1>Hanging by a Thread</h1>
+        <h2 class="subtitle">Visualizing the life of a garment and its effects on the environment</h2>
+        <h2>by Juliet Craig</h2> -->
+        <!-- PIE CHART -->
+        
+        <!-- WATER -->
+        <div></div>
+        <section id="scrolly">
+            <figure>
+                <div id="fast-fashion">
+                    <h2>That's so last season</h2> 
+                    <form></form>
+                    <div id="seasons_pie"></div>
+                </div>
+            </figure>
+
+            <article>
+                <div class="step" data-step="1" style="margin-top:175px;">
+                    <p>Traditionally, fashion companies would design collections based on seasonal trends, equalling to about four times a year.</p>
+                </div>
+                <div class="step" data-step="2">
+                    <p>With the introduction of "fast" fashion, there has been higher demand for more trends, creating nameless micro-seasons. This creates a new trend "season" every week.</p>
+                </div>
+                <div class="step" data-step="3">
+                    <p>So what is fast fashion?</p>
+                </div>
+                <div class="step" data-step="4">
+                    <p>Fast fashion is the industry of mass production clothing sold at inexpensive prices. This process exploits the labor of workers and is attributed to fashion waste.  </p>
+                </div>
+            </article>
+        </section>
+        <div>
+            <div class="spacer" style="height:250px;"></div>
+            <h2>Comparing Top fast fashion brands to top reseller</h2>
+            <button onclick="update(data1)">Dataset 1</button>
+            <button onclick="update(data2)">Dataset 2</button>
+            <div id="brand-line"></div>
+        </div>
+        <div>
+            <h2>Where do our clothes from?</h>
+        </div>
+        <section id="scrolly-2">
+            <figure>
+                <div class="stream-graph">
+                    <div id="stream-graph"></div>
+                </div>
+            </figure>
+
+            <article>
+                <div class="step" data-step="1" style="margin-top:275px;">
+                    <p>Raw materials are gathered and processed</p>
+                </div>
+                <div class="step" data-step="2">
+                    <p>They are woven into yarn</p>
+                </div>
+                <div class="step" data-step="3">
+                    <p>They are woven into a textile</p>
+                </div>
+                <div class="step" data-step="4">
+                    <p>They are dyed and printed, ready for designs</p>
+                </div>
+                <div class="step" data-step="5">
+                    <p>Finally, the fabrics are sewn together to create a garment</p>
+                </div>
+            </article>
+        </section>
+        <div class="spacer" style="height:550px;"></div>
+        <div class="animated-water">
+            <h2>How much water it takes to make a t-shirt and pair of jeans</h2>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" style="display: none;">
+                <symbol id="wave">
+                    <path d="M420,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C514,6.5,518,4.7,528.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H420z"></path>
+                    <path d="M420,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C326,6.5,322,4.7,311.5,2.7C304.3,1.4,293.6-0.1,280,0c0,0,0,0,0,0v20H420z"></path>
+                    <path d="M140,20c21.5-0.4,38.8-2.5,51.1-4.5c13.4-2.2,26.5-5.2,27.3-5.4C234,6.5,238,4.7,248.5,2.7c7.1-1.3,17.9-2.8,31.5-2.7c0,0,0,0,0,0v20H140z"></path>
+                    <path d="M140,20c-21.5-0.4-38.8-2.5-51.1-4.5c-13.4-2.2-26.5-5.2-27.3-5.4C46,6.5,42,4.7,31.5,2.7C24.3,1.4,13.6-0.1,0,0c0,0,0,0,0,0l0,20H140z"></path>
+                </symbol>
+            </svg>
+            <div class="box">
+                <div class="percent">
+                    <div class="percentNum" id="count">0</div>
+                    <div class="percentB">gal</div>
+                </div>
+                <div id="water" class="water">
+                    <svg viewBox="0 0 560 20" class="water_wave water_wave_back">
+                        <use xlink:href="#wave"></use>
+                    </svg>
+                    <svg viewBox="0 0 560 20" class="water_wave water_wave_front">
+                        <use xlink:href="#wave"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>What is synthetic material?</h2>
+        </div>
+        <div class="fabric-chart">
+            <img src="./assets/fabric-pie.svg">
+        </div>
+        <!-- <div class="material-market-share-graph">
+            <h2>Production</h2>
+            <div id="material-graph"></div>
+        </div> -->
+    </main>
+</body>
+
+<script src="./scripts/scroll.js"></script>
+<script src="./scripts/scroll2.js"></script>
+<script src="./scripts/fast-fashion-line.js"></script>
+<script src="./scripts/seasons.js"></script>
+<script src="./scripts/stream.js"></script>
+<!-- <script src="./scripts/sunburst.js"></script> -->
+</html>
