@@ -9,7 +9,7 @@
   var width = 960,
   height = 500,
   radius = Math.min(width, height) / 2;
-  var color = d3.scaleOrdinal(d3.schemeCategory20);
+  // var color = d3.scaleOrdinal()
   var pie = d3.pie()
   .value(function(d) { return d.count; })
   .sort(null);
@@ -24,7 +24,9 @@
   .append("g")
   .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
-
+//var color = d3.scaleOrdinal()
+//.domain(keys)
+//.range(["#A743AE","#6B40A9", "#E95585", "#EF804C", "#DDB842", "#CFCE4A", "#AFF066", "#83F372", "#64DBA6", "#4EB2D0", "#4787DD", "#5D54C4", "#6642AA"]);
 
 
   d3.tsv("./data/seasonsdata.tsv", type, function(error, data) {
@@ -32,9 +34,15 @@
     .key(function(d) { return d.fruit; })
     .entries(data);
 
+
     var label = d3.select("form").selectAll("label")
     .data(regionsByFruit)
     .enter().append("label");
+
+    var color = d3.scaleOrdinal()
+    .domain(label)
+    .range(["#A743AE","#6B40A9", "#E95585", "#EF804C", "#DDB842", "#CFCE4A", "#AFF066", "#83F372", "#64DBA6", "#4EB2D0", "#4787DD", "#5D54C4", "#6642AA"]);
+
 
     label.append("input")
     .attr("type", "radio")

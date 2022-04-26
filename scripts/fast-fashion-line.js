@@ -82,8 +82,8 @@ function drawLineChart() {
     
             
         .attr("fill", "none")
-            .attr("stroke", "Red")
-            .attr("stroke-width", 2);
+            .attr("stroke", "#A743AE")
+            .attr("stroke-width", 3);
             
         //hM Line
         const hMLineGenerator = d3
@@ -98,8 +98,8 @@ function drawLineChart() {
             .attr('d', hMLineGenerator(data))
             
         .attr("fill", "none")
-            .attr("stroke", "Blue")
-            .attr("stroke-width", 2);
+            .attr("stroke", "#E95585")
+            .attr("stroke-width", 3);
             
         //thred Line
         const thredLineGenerator = d3
@@ -114,8 +114,8 @@ function drawLineChart() {
             .attr('d', thredLineGenerator(data))
             
         .attr("fill", "none")
-            .attr("stroke", "Green")
-            .attr("stroke-width", 2);
+            .attr("stroke", "#AFF066")
+            .attr("stroke-width", 3);
             
          //posh Line
         const poshLineGenerator = d3
@@ -130,8 +130,8 @@ function drawLineChart() {
             .attr('d', poshLineGenerator(data))
             
         .attr("fill", "none")
-            .attr("stroke", "Orange")
-            .attr("stroke-width", 2);
+            .attr("stroke", "#4EB2D0")
+            .attr("stroke-width", 3);
             
             
         // Generate Y Axis
