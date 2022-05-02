@@ -30,6 +30,9 @@ function handleStepEnter(response) {
     console.log(response);
     // response = { element, direction, index }
 
+    let currentIndex = response.index;
+    let currentDirection = response.direction;
+
     // add color to current step only
     step.classed("is-active", function (d, i) {
         return i === response.index;
@@ -37,6 +40,18 @@ function handleStepEnter(response) {
 
     // update graphic based on step
     figure.select("p").text(response.index + 1);
+
+    console.log(currentIndex);
+    switch(currentIndex){
+        case 1:
+            if(currentDirection === 'down'){
+                radiobtn = document.getElementById("Fast");
+                radiobtn.checked = true;
+            }
+            break;
+        default:
+            break;
+    }
 }
 
 function setupStickyfill() {

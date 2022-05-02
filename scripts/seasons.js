@@ -1,5 +1,5 @@
 //script to build season donut chart with transition between fast and slow fashion
-  var myDuration = 600;
+  var myDuration = 1200;
   var firstTime = true;
 
   var width = 960,
@@ -48,6 +48,7 @@
     .attr("type", "radio")
     .attr("name", "fruit")
     .attr("value", function(d) { return d.key; })
+    .attr("id", function(d){ return d.key})
     .on("change", change)
     .filter(function(d, i) { return !i; })
     .each(change)
@@ -61,6 +62,7 @@
       var path = svg.selectAll("path");
       var data0 = path.data(),
       data1 = pie(region.values);
+      console.log("region", region);
 
       path = path.data(data1, key);
 
@@ -69,7 +71,7 @@
       .duration(myDuration)
       .attrTween("d", arcTween)
 
-
+      console.log("active change")
       path
       .enter()
       .append("path")

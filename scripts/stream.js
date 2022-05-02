@@ -82,9 +82,9 @@ var stackedData = d3.stack()
 .keys(keys)
 (data)
 
-document.addEventListener('mousemove', (event) => {
-	console.log(`Mouse X: ${event.clientX}, Mouse Y: ${event.clientY}`);
-});
+// document.addEventListener('mousemove', (event) => {
+// 	console.log(`Mouse X: ${event.clientX}, Mouse Y: ${event.clientY}`);
+// });
 
 // create a tooltip
 var Tooltip = svg2
