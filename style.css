@@ -180,10 +180,10 @@ figure p {
 
 .step {
     margin: 0 auto 30rem auto;
-    background-color: #3b3b3b;
+    background-color: #DC6D49;
     color: #fff;
     border-radius: 15px;
-    opacity: 15%;
+    opacity: 75%;
 }
 
 .step:last-child {

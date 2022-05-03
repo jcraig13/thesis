@@ -46,7 +46,11 @@ function handleStepEnter(response) {
         case 1:
             if(currentDirection === 'down'){
                 radiobtn = document.getElementById("Fast");
-                radiobtn.checked = true;
+                radiobtn.click();
+            }
+            if(currentDirection === 'up'){
+                radiobtn = document.getElementById("Traditional");
+                radiobtn.click();
             }
             break;
         default:
