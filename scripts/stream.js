@@ -27,6 +27,8 @@ svg2.append("g")
 .call(d3.axisBottom(x).tickSize(-height*.7).tickValues([1, 2, 3, 4, 5]))
 .select(".domain").remove()
 // Customization
+
+svg2.select("g").selectAll("text").remove()
 svg2.selectAll(".tick line").attr("stroke", "#b8b8b8")
 
 // Add X axis label:
@@ -39,31 +41,31 @@ svg2.append("text")
 svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", 80)
-  .attr("y", height-97 )
+  .attr("y", height-105 )
   .text("Fiber Production");
 
 svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", 240)
-  .attr("y", height-97 )
+  .attr("y", height-105 )
   .text("Yarn Production");
 
 svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", 480)
-  .attr("y", height-97 )
+  .attr("y", height-105 )
   .text("Fabric Production");
 
   svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", width-145)
-  .attr("y", height-97 )
+  .attr("y", height-105 )
   .text("Dyeing & Finishing");
 
   svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", width)
-  .attr("y", height-97 )
+  .attr("y", height-105 )
   .text("Assembly");
 
 // Add Y axis

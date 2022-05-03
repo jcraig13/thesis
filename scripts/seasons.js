@@ -187,30 +187,18 @@ function cloneObj(obj) {
   return o;
 }
 
-// //water js
-// var cnt=document.getElementById("count"); 
-// var water=document.getElementById("water");
-// var percent=cnt.innerText + 4900;
-// var interval;
-// interval=setInterval(function(){ 
-//   percent++; 
-//   cnt.innerHTML = percent ; 
-//   water.style.transform='translate(0'+','+(5000-percent)+'%)';
-//   if(percent==5000){
-//     clearInterval(interval);
-//   }
-// },35);
-// var cnt=document.getElementById("count"); 
-// var water=document.getElementById("water");
-// var percent=cnt.innerText;
-// var countBy = 25;
-// var interval;
-// interval=setInterval(function(){ 
-//   percent= +percent + countBy; 
-//   cnt.innerHTML = percent ; 
-//   water.style.transform='translate(0'+','+(100-((percent/5000)*100))+'%)';
-//   // console.log(percent, " percent: ", (percent/5000)*100);
-//   if(percent==5000){
-//     clearInterval(interval);
-//   }
-// },25);
+// water js
+  // var cnt=document.getElementById("count"); 
+  // var water=document.getElementById("water");
+  // var percent=cnt.innerText;
+  // var countBy = 25;
+  // var interval;
+  // interval=setInterval(function(){ 
+  //   percent= +percent + countBy; 
+  //   cnt.innerHTML = percent ; 
+  //   water.style.transform='translate(0'+','+(100-((percent/5000)*100))+'%)';
+  //   // console.log(percent, " percent: ", (percent/5000)*100);
+  //   if(percent==5000){
+  //     clearInterval(interval);
+  //   }
+  // },25);

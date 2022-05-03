@@ -29,6 +29,8 @@ function handleResize() {
 function handleStepEnter(response) {
     console.log(response);
     // response = { element, direction, index }
+    let currentIndex = response.index;
+    let currentDirection = response.direction;
 
     // add color to current step only
     step2.classed("is-active", function (d, i) {
@@ -37,6 +39,30 @@ function handleStepEnter(response) {
 
     // update graphic based on step
     figure2.select("p").text(response.index + 1);
+
+    switch(currentIndex){
+        case 4:
+            if(currentDirection === 'down'){
+                var cnt=document.getElementById("count"); 
+                var water=document.getElementById("water");
+                var percent=cnt.innerText;
+                var countBy = 25;
+                var interval;
+                console.log("hello!")
+                interval=setInterval(function(){ 
+                  percent= +percent + countBy; 
+                  cnt.innerHTML = percent ; 
+                  water.style.transform='translate(0'+','+(100-((percent/5000)*100))+'%)';
+                  // console.log(percent, " percent: ", (percent/5000)*100);
+                  if(percent==5000){
+                    clearInterval(interval);
+                  }
+                },25);
+            }
+            break;
+        default:
+            break;
+    }
 }
 
 function setupStickyfill() {
