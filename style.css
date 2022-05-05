@@ -41,6 +41,9 @@ h2 {
     font-size: 40px;
     font-weight: 250;
     color: #DC6D49;
+    /* padding-bottom: 5px;
+    border:0px;
+    margin-bottom: 0px; */
 }
   
 input {
@@ -130,6 +133,34 @@ input {
    }
 }
 
+.box .water2 {
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 100%);
+    background: #4d6de3;
+    transition: all 0.3s;
+}
+.box .water2_wave {
+    width: 200%;
+    position: absolute;
+    bottom: 100%;
+}
+.box .water2_wave_back {
+    right: 0;
+    fill: #c7eeff;
+    animation: wave-back 1.4s infinite linear;
+}
+.box .water2_wave_front {
+    left: 0;
+    fill: #4d6de3;
+    margin-bottom: -1px;
+    animation: wave-front 0.7s infinite linear;
+}
+
 /* scrollytelling */
 #scrolly {
     position: relative;
@@ -150,7 +181,7 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 1rem;
+
 }
 
 #scrolly-2>* {

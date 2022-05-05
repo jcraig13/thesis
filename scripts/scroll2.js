@@ -37,8 +37,8 @@ function handleStepEnter(response) {
         return i === response.index;
     });
 
-    // update graphic based on step
-    figure2.select("p").text(response.index + 1);
+    // // update graphic based on step
+    // figure2.select("p").text(response.index + 1);
 
     switch(currentIndex){
         case 4:
@@ -53,11 +53,10 @@ function handleStepEnter(response) {
                   percent= +percent + countBy; 
                   cnt.innerHTML = percent ; 
                   water.style.transform='translate(0'+','+(100-((percent/5000)*100))+'%)';
-                  // console.log(percent, " percent: ", (percent/5000)*100);
                   if(percent==5000){
                     clearInterval(interval);
                   }
-                },25);
+                },30);
             }
             break;
         default:
