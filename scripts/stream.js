@@ -29,7 +29,7 @@ svg2.append("g")
 // Customization
 
 svg2.select("g").selectAll("text").remove()
-svg2.selectAll(".tick line").attr("stroke", "#b8b8b8")
+svg2.selectAll(".tick line").attr("stroke", "#b8b8b8").attr("z-index", "2")
 
 // Add X axis label:
 svg2.append("text")
@@ -46,7 +46,7 @@ svg2.append("text")
 
 svg2.append("text")
   .attr("text-anchor", "end")
-  .attr("x", 240)
+  .attr("x", 255)
   .attr("y", height-105 )
   .text("Yarn Production");
 
@@ -85,16 +85,26 @@ var stackedData = d3.stack()
 (data)
 
 // document.addEventListener('mousemove', (event) => {
-// 	console.log(`Mouse X: ${event.clientX}, Mouse Y: ${event.clientY}`);
+// 	// console.log(`Mouse X: ${event.clientX}, Mouse Y: ${event.clientY}`);
+//   var mouseX = event.clientX;
+//   var mouseY = event.clientY;
 // });
+
+// Area generator
+var area = d3.area()
+.x(function(d) { return x(d.data.category); })
+.y0(function(d) { return y(d[0]); })
+.y1(function(d) { return y(d[1]); })
 
 // create a tooltip
 var Tooltip = svg2
 .append("text")
 .attr("x", 0)
 .attr("y", 0)
+.attr("class", "tip")
 .style("opacity", 0)
 .style("font-size", 17)
+
 
 // Three function that change the tooltip when user hover / move / leave a cell
 var mouseover = function(d) {
@@ -103,21 +113,22 @@ d3.selectAll(".myArea").style("opacity", .2)
 d3.select(this)
   .style("stroke", "black")
   .style("opacity", 1)
+  .style("zIndex", 1)
 }
 var mousemove = function(d,i) {
 grp = keys[i]
 Tooltip.text(grp)
+// Tooltip.attr("x", (d3.event.pageX))
+// .attr("y", (d3.event.pageY -  4000))
+console.log( d3.event.pageX, d3.event.pageY )
 }
 var mouseleave = function(d) {
 Tooltip.style("opacity", 0)
 d3.selectAll(".myArea").style("opacity", 1).style("stroke", "none")
 }
 
-// Area generator
-var area = d3.area()
-.x(function(d) { return x(d.data.category); })
-.y0(function(d) { return y(d[0]); })
-.y1(function(d) { return y(d[1]); })
+
+
 
 // Show the areas
 svg2

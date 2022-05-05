@@ -52,6 +52,19 @@ input {
     outline: none;
 } */
 
+/*3 column water layout*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    column-gap:30px;
+  }
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
 .box {
     height: 380px;
     width: 380px;
