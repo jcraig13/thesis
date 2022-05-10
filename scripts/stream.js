@@ -1,5 +1,5 @@
 // set the dimensions and margins of the graph
-var margin = {top: 30, right: 30, bottom: 0, left: 30},
+var margin = {top: 30, right: 90, bottom: 0, left: 80},
 width = 900 - margin.left - margin.right,
 height = 850 - margin.top - margin.bottom;
 
@@ -52,21 +52,89 @@ svg2.append("text")
 
 svg2.append("text")
   .attr("text-anchor", "end")
-  .attr("x", 480)
+  .attr("x", 433)
   .attr("y", height-105 )
   .text("Fabric Production");
 
   svg2.append("text")
   .attr("text-anchor", "end")
-  .attr("x", width-145)
+  .attr("x", 620)
   .attr("y", height-105 )
   .text("Dyeing & Finishing");
 
   svg2.append("text")
   .attr("text-anchor", "end")
-  .attr("x", width)
+  .attr("x", 770)
   .attr("y", height-105 )
   .text("Assembly");
+
+  //add text labels
+  svg2.append("text")
+  .attr("x", 731)
+  .attr("y", height-305 )
+  .text("- China");
+
+  svg2.append("text")
+  .attr("x", 731)
+  .attr("y", 250 )
+  .text("- Rest of the");
+
+  svg2.append("text")
+  .attr("x", 739)
+  .attr("y", 270)
+  .text("World");
+
+  svg2.append("text")
+  .attr("x", 731)
+  .attr("y", 355 )
+  .text("- Vietnam");
+
+  svg2.append("text")
+  .attr("x", 731)
+  .attr("y", 372 )
+  .text("- Turkey");
+
+  svg2.append("text")
+  .attr("x", 731)
+  .attr("y", 389 )
+  .text("- India");
+
+  svg2.append("text")
+  .attr("x", 731)
+  .attr("y", 425 )
+  .text("- EU");
+
+  svg2.append("text")
+  .attr("x", 731)
+  .attr("y", 605 )
+  .text("- Bangledesh");
+
+  svg2.append("text")
+  .attr("x", -35)
+  .attr("y", 277 )
+  .text("USA -");
+
+  svg2.append("text")
+  .attr("x", -62)
+  .attr("y", 289 )
+  .text("Pakistan -");
+
+  svg2.append("text")
+  .attr("x", -42)
+  .attr("y", 614 )
+  .text("Brazil -");
+
+  svg2.append("text")
+  .attr("x", 160)
+  .attr("y", 59 )
+  .style("font-size", "30px")
+  .text("Geographic manufacturing distribution");
+
+  svg2.append("text")
+  .attr("x", 236)
+  .attr("y", 94 )
+  .style("font-size", "30px")
+  .text("grouped by process stage");
 
 // Add Y axis
 var y = d3.scaleLinear()
@@ -116,8 +184,8 @@ d3.select(this)
   .style("zIndex", 1)
 }
 var mousemove = function(d,i) {
-grp = keys[i]
-Tooltip.text(grp)
+// grp = keys[i]
+// Tooltip.text(grp)
 // Tooltip.attr("x", (d3.event.pageX))
 // .attr("y", (d3.event.pageY -  4000))
 console.log( d3.event.pageX, d3.event.pageY )

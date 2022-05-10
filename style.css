@@ -15,6 +15,8 @@ body{
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin-left: 0px;
+    margin-top: 0px;
     text-align: center;
     background-color: #FFF6E9;
     width: 100%;
@@ -50,10 +52,7 @@ input {
     margin: 0 7px;
 }
 /* water */
-/* *, *:before, *:after {
-    box-sizing: border-box;
-    outline: none;
-} */
+
 
 /*3 column water layout*/
 .grid-container {
@@ -193,8 +192,9 @@ input {
 article {
     position: relative;
     padding: 0 1rem;
-    max-width: 20rem;
+    max-width: 25rem;
     margin-right: 10%;
+    background-color: white;
 }
 
 figure {
