@@ -41,7 +41,7 @@ function handleStepEnter(response) {
     // figure2.select("p").text(response.index + 1);
 
     switch(currentIndex){
-        case 5:
+        case 6:
             if(currentDirection === 'down'){
                 var cnt=document.getElementById("count"); 
                 var water=document.getElementById("water");
