@@ -36,36 +36,42 @@ svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", width)
   .attr("y", height-30 )
+  .attr("class", "one")
   .text("Production Category");
 
 svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", 80)
   .attr("y", height-105 )
+  .attr("class", "two")
   .text("Fiber Production");
 
 svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", 255)
   .attr("y", height-105 )
+  .attr("class", "three")
   .text("Yarn Production");
 
 svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", 433)
   .attr("y", height-105 )
+  .attr("class", "four")
   .text("Fabric Production");
 
-  svg2.append("text")
+svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", 620)
   .attr("y", height-105 )
+  .attr("class", "five")
   .text("Dyeing & Finishing");
 
-  svg2.append("text")
+svg2.append("text")
   .attr("text-anchor", "end")
   .attr("x", 770)
   .attr("y", height-105 )
+  .attr("class", "six")
   .text("Assembly");
 
   //add text labels
@@ -205,6 +211,7 @@ svg2
 .enter()
 .append("path")
   .attr("class", "myArea")
+  .attr("id", function(d){ return d.key})
   .style("fill", function(d) { return color(d.key); })
   .attr("d", area)
   .on("mouseover", mouseover)

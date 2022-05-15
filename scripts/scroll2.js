@@ -41,7 +41,24 @@ function handleStepEnter(response) {
     // figure2.select("p").text(response.index + 1);
 
     switch(currentIndex){
+        // case 1:
+        //     if(currentDirection === 'down'){
+        //         d3.selectAll("one").style("font-weight", 200)
+        //     }
+        //     break;
+        case 5:
+            if(currentDirection === 'down'){
+                d3.selectAll(".myArea").style("opacity", 0.2)
+                d3.select("#China").style("opacity", 1).style("stroke", "1")
+            }
+            break;
         case 6:
+            if(currentDirection=== 'down'){
+                d3.selectAll(".myArea").style("opacity", 0.2)
+                d3.select("#USA").style("opacity", 1).style("stroke", "1")
+            }
+            break;
+        case 7:
             if(currentDirection === 'down'){
                 var cnt=document.getElementById("count"); 
                 var water=document.getElementById("water");
