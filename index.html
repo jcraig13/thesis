@@ -46,8 +46,22 @@
         </section>
         <div>
             <div class="spacer" style="height:250px;"></div>
-            <img src="assets/landfill.png" style="width:100%;">
+
         </div>
+        <div id="app">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <div id="annotated-image-wrapper" class="annotated-image-wrapper">
+                  <img id="annotated-image" src="assets/landfill2.jpg" alt="" @click="onImageClick">
+                  <div v-for="annotation in annotations"
+                       class="image-annotation"
+                       :id="annotation.id"
+                       :style="{ top: `${annotation.y}%`, left: `${annotation.x}%` }"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
         <!-- <div>
             
             <h2>Comparing top fast fashion brands to top reseller</h2>
@@ -220,8 +234,9 @@
             </section>
         </div>
         <div class="spacer" style="height:550px;"></div>
-        <div class="final">
-            <h2>Let's Start a New Trend</h2>
+        <div class="final" style = "margin-bottom: 0px;">
+            <img src="/assets/final.png"></img>
+            <!-- <h2>Let's Start a New Trend</h2>
             <div class="grid-container">
                 <div class="grid-item">
                     <ul class="a" style="width:500px;">
@@ -236,7 +251,7 @@
                     <h4>Brands trying to make a difference</h4>
                     <img src="assets/brands.png" style="width:80%;">
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- <div class="material-market-share-graph">
             <h2>Production</h2>
@@ -253,5 +268,11 @@
 <script src="./scripts/scroll.js"></script>
 <script src="./scripts/scroll2.js"></script>
 <script src="./scripts/scroll3.js"></script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script>
+<script  src="./scripts/trash.js"></script>
 <!-- <script src="./scripts/sunburst.js"></script> -->
 </html>
